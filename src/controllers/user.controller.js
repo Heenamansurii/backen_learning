@@ -179,6 +179,7 @@ const generateAccessAndRefreshTokens = async (userI) => {
             { new: true 
 
             })
+        
             const options = {
                 httpOnly: true,
                 secure:true,

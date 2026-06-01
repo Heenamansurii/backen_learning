@@ -325,6 +325,7 @@ const getCurrentUser = asyncHandler(async (req, res) => {
   
                     
                 })
+                
  const getUserChannelProfile = asyncHandler(async (req, res) => {       
 
         const { channelId } = req.params;  
@@ -444,8 +445,8 @@ const channel =await User.aggregate([
     changeCurrentPassword,
     getCurrentUser,
     updateAccountDetails,
-    updateUserAvatar
-    ,updateUserCoverImage,
+    updateUserAvatar,
+    updateUserCoverImage,
     getUserChannelProfile ,
-    getWatchHistory  ,
+    getWatchHistory  
 };
